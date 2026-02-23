@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Registration Form</title>
+
+<style>
+body{
+    background:#f0ebf8;
+    font-family: Arial, sans-serif;
+    margin:0;
+}
+
+.container{
+    width:550px;
+    margin:40px auto;
+}
+
+.form-box{
+    background:white;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    border-top:8px solid #673ab7;
+}
+
+h2{
+    margin-top:0;
+}
+
+label{
+    font-weight:bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select{
+    width:100%;
+    padding:10px;
+    margin:8px 0 20px 0;
+    border:1px solid #ccc;
+    border-radius:4px;
+    font-size:14px;
+}
+
+/* Proper Alignment for Radio & Checkbox */
+.option-group{
+    margin:10px 0 20px 0;
+}
+
+.option-item{
+    display:flex;
+    align-items:center;
+    margin-bottom:8px;
+}
+
+.option-item input{
+    width:auto;
+    margin-right:10px;
+}
+
+button{
+    background:#673ab7;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+button:hover{
+    background:#5e35b1;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+<div class="form-box">
+
+<h2>Student Registration Form</h2>
+<p>Please fill all required details</p>
+
+<form>
+
+<label>Full Name *</label>
+<input type="text" placeholder="Enter your name" required>
+
+<label>Password *</label>
+<input type="password" placeholder="Enter password" required>
+
+<label>Confirm Password *</label>
+<input type="password" placeholder="Confirm password" required>
+
+<label>Email *</label>
+<input type="email" placeholder="Enter your email" required>
+
+<label>Phone Number *</label>
+<input type="tel" placeholder="Enter phone number" required>
+
+<label>Gender *</label>
+<div class="option-group">
+    <div class="option-item">
+        <input type="radio" name="gender" required>
+        <span>Male</span>
+    </div>
+    <div class="option-item">
+        <input type="radio" name="gender">
+        <span>Female</span>
+    </div>
+    <div class="option-item">
+        <input type="radio" name="gender">
+        <span>Other</span>
+    </div>
+</div>
+
+<label>Skills *</label>
+<div class="option-group">
+    <div class="option-item">
+        <input type="checkbox">
+        <span>HTML</span>
+    </div>
+    <div class="option-item">
+        <input type="checkbox">
+        <span>CSS</span>
+    </div>
+    <div class="option-item">
+        <input type="checkbox">
+        <span>JavaScript</span>
+    </div>
+    <div class="option-item">
+        <input type="checkbox">
+        <span>Java</span>
+    </div>
+</div>
+
+<label>Select Year *</label>
+<select required>
+<option value="">-- Select Year --</option>
+<option>1st Year</option>
+<option>2nd Year</option>
+<option>3rd Year</option>
+<option>Final Year</option>
+</select>
+
+<label>Interested Domain *</label>
+<select required>
+<option value="">-- Select Domain --</option>
+<option>Web Development</option>
+<option>App Development</option>
+<option>AI / Machine Learning</option>
+<option>Cyber Security</option>
+<option>Data Science</option>
+</select>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+</div>
+
+</body>
+</html>s
